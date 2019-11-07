@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>	
+
+   <!-- Gazebo  -->
+  <include file="$(find agvmecanumwheel_gazebo)/launch/factory.launch" />
+
+  <!-- Robot with diff drive -->
+  <include file="$(find agvmecanumwheel_gazebo)/launch/agv_mecanumwheel_spawn.launch">
+	
+     <arg name="robot_name" value="/" />
+     <arg name="robot_position" value="-x 4.175 -y 0.7 -z 0.094862 -R 0 -P 0 -Y 1.570796" />
+     
+   </include>
+
+</launch>
